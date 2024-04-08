@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/infinity-logo.png";
 
+import { logobg } from "../assets/events/eventsImages";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -16,9 +16,9 @@ const Navbar: React.FC = () => {
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src={logo} className="h-8" alt="Logo" />
+          <img src={logobg} className="h-14" alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            INFINITY 2k24
+            Agni College Of Technolgy 
           </span>
         </Link>
         <button
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
                 to="/"
                 // className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 className={({ isActive }): string =>
-                  `${isActive ? "text-blue-700" : ""} nav-link`
+                  `${isActive ? "text-yellow-200" : ""} nav-link`
                 }
               >
                 Home
@@ -63,14 +63,14 @@ const Navbar: React.FC = () => {
               <NavLink
                 to="/events"
                 className={({ isActive }): string =>
-                  `${isActive ? "text-blue-700" : ""} nav-link`
+                  `${isActive ? "text-yellow-200" : ""} nav-link`
                 }
               >
                 Events
               </NavLink>
             </li>
-            <li>
-              <NavLink
+            {/* <li> */}
+              {/* <NavLink
                 to="/gallery"
                 className={({ isActive }): string =>
                   `${isActive ? "text-blue-700" : ""} nav-link`
@@ -78,8 +78,8 @@ const Navbar: React.FC = () => {
               >
                 Gallery
               </NavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <NavLink
                 to="/workshop"
                 className={({ isActive }): string =>
@@ -88,25 +88,25 @@ const Navbar: React.FC = () => {
               >
                 Workshop
               </NavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <NavLink
-                to="/sponsors"
+                to="/about"
                 className={({ isActive }): string =>
-                  `${isActive ? "text-blue-700" : ""} nav-link`
+                  `${isActive ? "text-yellow-200" : ""} nav-link`
                 }
               >
-                Sponsors
+                About
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
-                to="/our-team"
+                to="https://docs.google.com/forms/d/e/1FAIpQLSd0VZM5Z-dq3FdAzyJW71xXDKUa8xvpdv34gA2tTgIKTXjpAg/viewform?usp=sf_link"
                 className={({ isActive }): string =>
-                  `${isActive ? "text-blue-700" : ""} nav-link`
+                  `${isActive ? "text-yellow-200" : ""} nav-link`
                 }
               >
-                Our Team
+                Register
               </NavLink>
             </li>
           </ul>

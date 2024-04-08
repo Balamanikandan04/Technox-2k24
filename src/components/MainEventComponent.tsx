@@ -9,6 +9,8 @@ interface EventInfo {
   title: string;
   form_link: string;
   description: string;
+  rules:string;
+  coordinates:string;
   button: boolean;
 }
 
@@ -96,14 +98,14 @@ const BackgroundGradientCard = ({
   }, [isFullScreen]);
 
   return (
-    <div className="py-20 flex items-center justify-center">
+    <div className="py-20 flex w-150 items-center justify-center">
       <div
         className={`fixed inset-0 z-50 overflow-auto bg-black bg-opacity-80 flex items-center justify-center ${
           isFullScreen ? "block" : "hidden"
         }`}
         onClick={toggleFullScreen}
       >
-        <div className="max-w-3xl mx-auto relative">
+        <div className="max-w-5xl mx-auto relative">
           <button
             className="absolute top-4 right-4 text-white text-3xl focus:outline-none z-50"
             onClick={toggleFullScreen}
@@ -126,12 +128,27 @@ const BackgroundGradientCard = ({
           className="object-contain"
           onClick={toggleFullScreen}
         />
-        <p className="text-xl font-bold text-neutral-600 dark:text-white lg:my-4">
+        <p className="text-xl font-bold text-neutral-600 dark:text-yellow-200 lg:my-4">
           {event_info?.title}
         </p>
 
-        <p className="text-neutral-500 text-left text-lg max-w-sm mt-2 dark:text-neutral-300">
+        <p className="text-neutral-500 text-left text-md max-w-sm mt-2 dark:text-neutral-300">
           {event_info?.description.split("\n").map((line) => {
+            return line == '' ? <br/> : <div key={line}>{line}</div>;
+          })}
+        </p>
+        <p className="text-neutral-500 text-left text-lg max-w-sm mt-2 dark:text-yellow-200">
+        RULES & REGULATIONS </p>
+
+        <p className="text-neutral-500 text-left text-md max-w-sm  dark:text-neutral-300">
+          {event_info?.rules.split("\n").map((line) => {
+            return line == '' ? <br/> : <div key={line}>{line}</div>;
+          })}
+           <p className="text-neutral-500 text-left text-lg max-w-sm mt-2 dark:text-yellow-200">
+           For any queries Contact: </p>
+        </p>
+        <p className="text-neutral-500 text-left text-md max-w-sm  dark:text-neutral-300">
+          {event_info?.coordinates.split("\n").map((line) => {
             return line == '' ? <br/> : <div key={line}>{line}</div>;
           })}
         </p>

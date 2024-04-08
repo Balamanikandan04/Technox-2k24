@@ -7,11 +7,11 @@ function JoinUsComponent() {
       <div className="py-10 mx-4">
         <div className="h-[40vh] w-full flex items-center justify-center ">
             <PinContainer
-                title="📃 22nd & 23rd March"
+                title="📃13th April"
             >
                 <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold text-slate-100 text-3xl">
-                    INFINITY 2K24
+                    TECHNOX 2K24
                 </h3>
                 <div className="text-base !m-0 !p-0 font-normal">
                     <span className="text-slate-500 text-xl">

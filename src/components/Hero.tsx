@@ -1,6 +1,5 @@
 import { FC } from "react";
-import OUWhiteLogo from "../assets/OUWhiteLogo.png";
-import InfinityLogoWhite from "../assets/InfinityLogoWhite.png";
+import logobg from "../assets/events/logo-bg.png";
 import { CalendarIcon } from "@radix-ui/react-icons";
 import { SpotLight } from "./ui/SpotLight";
 
@@ -12,46 +11,46 @@ const Hero: FC = () => {
         fill="white"
       />
       <main className="text-4xl lg:text-4xl font-bold">
-        <h2 className="inline">Department of</h2>
+        <h3 className="inline">Department of</h3>
         <br />
         <h1 className="inline">
-          <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
+          <span className="inline bg-gradient-to-r from-[#dde65e] via-[#dde65e] to-[#dde65e] text-transparent bg-clip-text">
             Computer Science & Engineering
           </span>{" "}
         </h1>{" "}
         {/* Center the image here */}
-        <div className="flex justify-center items-center">
-          <img src={OUWhiteLogo} alt="Osmania University Logo" />
-        </div>
+        {/* <div className="text-2xl lg:text-3xl font-semibold items-center justify-center mb-4 mt-3">
+          <p>Agni College Of Technology</p>
+        </div> */}
         <main className="text-3xl font-bold">Presents</main>
         <br />
-        <div className="text-2xl lg:text-3xl font-semibold items-center justify-center">
-          <p>A NATIONAL TECHNICAL SYMPOSIUM</p>
+        <div className="text-2xl lg:text-4xl font-semibold items-center justify-center">
+          <p> NATIONAL LEVEL TECHNICAL SYMPOSIUM</p>
         </div>
         {/* Make changes here */}
         <div className="flex flex-row items-center justify-center">
           {/* Container for the InfinityLogoWhite image */}
           <div className="w-1/3 -mx-5">
             <img
-              src={InfinityLogoWhite}
-              className="object-contain h-auto max-h-[50vh]"
-              alt="Infinity Logo White"
+              src={logobg}
+              className="object-contain h- max-h-[50vh]"
+              alt="Technox Logo White"
             />
           </div>
           {/* Container for the INFINITY 2K24 text */}
           <div className="flex flex-col items-center justify-center">
-            <div className="text-6xl font-sans font-extrabold lg:text-9xl mt-3">
-              INFINITY
+            {/* <div className="text-4xl font-sans font-extrabold lg:text-8xl mt-3">
+              TECHNOX
               <br />
               2K24
-            </div>
-            <div></div>
+            </div> */}
+            
           </div>
         </div>
-        <div className="flex flex-row lg:items-center justify-center mt-4 items-end">
+        <div className="flex flex-row lg:items-center justify-center mt-3 items-end">
           <CalendarIcon className="w-12 h-12 lg:w-16 lg:h-16 mr-4 lg:mr-6" />
-          <p className="text-lg lg:text-2xl">
-            22<sup>nd</sup> March - 23<sup>rd</sup> March
+          <p className="text-lg lg:text-3xl">
+            13<sup>th</sup> April - 24
           </p>
         </div>
       </main>

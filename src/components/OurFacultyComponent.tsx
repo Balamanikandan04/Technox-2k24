@@ -1,6 +1,6 @@
 import React from 'react'
-import SudhaMam from '../assets/SudhaMam.jpeg'
-import GovardhanaSir from '../assets/GovardhanaSir.jpeg'
+// import SudhaMam from '../assets/SudhaMam.jpeg'
+// import GovardhanaSir from '../assets/GovardhanaSir.jpeg'
 
 interface FacultyMember {
   imageUrl: string;
@@ -11,15 +11,21 @@ interface FacultyMember {
 const OurFacultyComponent: React.FC = () => {
   const faculty: FacultyMember[] = [
     {
-      imageUrl: SudhaMam,
-      name: 'Professor P.V. Sudha, Head of the Department',
-      description: 'Professor P.V. Sudha is the Head of the Computer Science and Engineering Department and the Dean of Informatics at OU. She leads the Cloud Computing Research Lab at TDC, UCE(A), specializing in Distributed and Cloud Computing, holding M.Tech and Ph.D. degrees. Her dedication and transformative contributions are widely appreciated.'
+      imageUrl: "",
+      name: 'Professor  Balaji Madhavan, Head of the Department',
+      description:""
     },
     {
-      imageUrl: GovardhanaSir,
-      name: 'Dr. I. Govardhana Rao, Faculty Convenor',
-      description: 'Dr. I. Govardhana Rao, with an M.Tech degree, serves as our Assistant Professor in the department of Computer Science and Engineering, demonstrating profound expertise in information security.His dedication and commitment to enriching our academic community are admired, with a focus on continuous improvement'
-    }
+      imageUrl: "",
+      name: 'Principal Srivansan Alavandar',
+      description:""
+    },
+    {
+      imageUrl: "",
+      name: 'Dr.Sujatha ',
+      description:""
+    },
+   
   ];
 
   return (
