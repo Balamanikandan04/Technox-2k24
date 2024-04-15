@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Base styles */
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background: transparent;
+    position: relative;
+  
+    bottom: 100px;
+   
+    overflow-x: auto;
+    box-shadow:blueviolet ;
+     /* Enable horizontal scrolling on smaller screens */
+  }
+  
+  .timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%; /* Ensure timer boxes fit within the container */
+  }
+  
+  .timer-box {
+    flex: 1; /* Distribute available space evenly among timer boxes */
+    margin: 0 5px;
+    padding: 18px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  border: 3px solid rgba(255, 242, 123, 0.848);
+        /* Other styles */
+        box-shadow: 0 8px 16px rgba(255, 242, 123, 0.848);
+        /* Other styles */
+      }
+      
+  
+  
+  .timer-label {
+    font-size: 20px;
+    color: #fff;
+    
+  }
+  
+  .timer-value {
+    font-size: 26px;
+    color: #ff6b6b;
+  }
+  
+  .timer-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    .timer-box {
+      margin: 20px 5px;
+      width: 50%;
+      /* Reduce margin on smaller screens */
+    }
+    .countdown-timer{
+        bottom: 100px;
+
+    }
+    .timer-container{
+        margin-left:20px ;
+        margin-right: 20px;
+    }
+  }
+  

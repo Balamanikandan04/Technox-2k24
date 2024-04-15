@@ -54,7 +54,8 @@ RohanBernard  -8939204211
     •  Punctuality and decorum are essential.
     •  Any form of malpractice is strictly prohibited.
     •  Tab switching or using external editors is not allowed and will lead to disqualification.`,
-    coordinates:"",
+    coordinates:`Balamanikandan - 9363301812
+    Swetha - 9843729831`,
     form_link: "https://docs.google.com/forms/d/e/1FAIpQLSd0VZM5Z-dq3FdAzyJW71xXDKUa8xvpdv34gA2tTgIKTXjpAg/viewform?usp=sf_link",
     button: true,
   },
@@ -104,8 +105,8 @@ RohanBernard  -8939204211
                  Deepa M - 9361769514
                 Joel Jacob B - 9841435881
                 Sugetha D - 9786458595`,
-    form_link: "https://docs.google.com/forms/d/e/1FAIpQLSd0VZM5Z-dq3FdAzyJW71xXDKUa8xvpdv34gA2tTgIKTXjpAg/viewform?usp=sf_link",
-    button: true,
+                form_link: "https://docs.google.com/forms/d/e/1FAIpQLSd0VZM5Z-dq3FdAzyJW71xXDKUa8xvpdv34gA2tTgIKTXjpAg/viewform?usp=sf_link",
+                button: true,
   },
   {
     id: 3,
@@ -139,7 +140,7 @@ RohanBernard  -8939204211
     • Beyond the noise distraction, the team guessing more words and securing high points wins!`,
     coordinates:`1. Vallishree V - 9025840490
     2. Ezhilraj L - 9791017110`,
-    form_link: "https://docs.google.com/forms/d/e/1FAIpQLSd0VZM5Z-dq3FdAzyJW71xXDKUa8xvpdv34gA2tTgIKTXjpAg/viewform?usp=sf_link",
+   form_link: "https://docs.google.com/forms/d/e/1FAIpQLSd0VZM5Z-dq3FdAzyJW71xXDKUa8xvpdv34gA2tTgIKTXjpAg/viewform?usp=sf_link",
     button: true,
   },
 

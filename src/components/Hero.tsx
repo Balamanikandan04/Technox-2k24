@@ -5,7 +5,7 @@ import { SpotLight } from "./ui/SpotLight";
 
 const Hero: FC = () => {
   return (
-    <div className="flex flex-1 my-10 lg:flex-row h-[60vh] lg:h-[80vh] align-middle justify-center">
+    <div className="flex flex-1 my-10 lg:flex-row h-[60vh] lg:h-[70vh] align-middle justify-center">
       <SpotLight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
@@ -47,7 +47,7 @@ const Hero: FC = () => {
             
           </div>
         </div>
-        <div className="flex flex-row lg:items-center justify-center mt-3 items-end">
+        <div className="flex flex-row lg:items-center justify-center mt-1 items-end">
           <CalendarIcon className="w-12 h-12 lg:w-16 lg:h-16 mr-4 lg:mr-6" />
           <p className="text-lg lg:text-3xl">
             13<sup>th</sup> April - 24

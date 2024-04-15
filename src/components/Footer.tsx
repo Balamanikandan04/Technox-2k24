@@ -57,7 +57,7 @@ const Footer: FC = () => {
                     </div>
                   </div>
                   <div className="text-gray-300 text-center">&copy; Powered & Secured by CSE Dept.</div>
-                  <div className="text-gray-300 text-right text-sm"> Developed by Balamanikandan & Gowtham Raj.</div>
+                  <div className="text-gray-300 text-right text-sm"> Developed by Balamanikandan & Gowtham</div>
 
                 </div>
               </div>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { agnilogo } from "../assets/events/eventsImages";
 
-import { logobg } from "../assets/events/eventsImages";
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -11,20 +12,20 @@ const Navbar: React.FC = () => {
 
   return (
     <nav>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src={logobg} className="h-14" alt="Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Agni College Of Technolgy 
+          <img src={agnilogo} className="h-14" alt="Logo" />
+          <span className="self-center text-1.5xl font-semibold whitespace-nowrap dark:text-white">
+            Agni College Of Technology 
           </span>
         </Link>
         <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-end p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded={isOpen ? "true" : "false"}
         >
@@ -89,7 +90,7 @@ const Navbar: React.FC = () => {
                 Workshop
               </NavLink>
             </li> */}
-            {/* <li>
+            <li>
               <NavLink
                 to="/about"
                 className={({ isActive }): string =>
@@ -98,7 +99,7 @@ const Navbar: React.FC = () => {
               >
                 About
               </NavLink>
-            </li> */}
+            </li>
             <li>
               <NavLink
                 to="https://docs.google.com/forms/d/e/1FAIpQLSd0VZM5Z-dq3FdAzyJW71xXDKUa8xvpdv34gA2tTgIKTXjpAg/viewform?usp=sf_link"

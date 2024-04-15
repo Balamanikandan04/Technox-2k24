@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -41,3 +42,6 @@ i. Clone the repo.
 ii. Hit ```npm install```
 
 To Run : iii. ```npm run dev```
+=======
+# Technox-2k24
+>>>>>>> 4dbdf4d8d89fe1c310460f66b492e9e6c20b2798

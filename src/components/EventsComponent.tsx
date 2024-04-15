@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import BorderMagicButton from './ui/BorderMagicButton';
+import { NavLink } from 'react-router-dom';
 
 const EventsComponent: FC = () => {
   return (
@@ -10,9 +11,18 @@ const EventsComponent: FC = () => {
           <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
             Uncover exciting Events...
           </p>
-          <a href="/events">
+                        <NavLink
+                to="/events"
+                className={({ isActive }): string =>
+                  `${isActive ? "text-yellow-200" : ""} nav-link`
+                }
+              >
+               <BorderMagicButton text='Events' />
+              </NavLink>
+            
+          {/* <a href="/events">
             <BorderMagicButton text="Know More"/>
-          </a>
+          </a> */}
         </div>
         {/* <div className="mt-20"> {/* Adjust the margin top to add space */}
           {/* <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8"> */}

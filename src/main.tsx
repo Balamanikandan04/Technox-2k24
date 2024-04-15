@@ -5,6 +5,7 @@ import App from "./App";
 import "./index.css";
 import Events from "./pages/Events";
 import Home from "./pages/Homepage";
+import AboutInfinity from "./components/AboutInfinity";
 
 
 
@@ -15,8 +16,8 @@ const routing = (
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-        <Route path="events" element={<Events />} />
-        {/* <Route path="workshop" element={<Workshop />} /> */}
+        <Route path="/events" element={<Events />} />
+        <Route path="/about" element={<AboutInfinity />} />
         {/* <Route path="sponsors" element={<SponsorsPage />} /> */}
         {/* <Route path="our-team" element={<OurTeamPage />} /> */}
         {/* <Route path="*" element={<PageNotFound />} /> */}
